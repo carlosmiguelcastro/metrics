@@ -1,4 +1,6 @@
-package com.mango.swaggertraining;
+package com.mango.swaggertraining.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +11,7 @@ public class User {
 
     @Id
     @GeneratedValue
+    @JsonIgnore
     private long id;
     private String name;
     private int age;
